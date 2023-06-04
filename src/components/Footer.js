@@ -7,10 +7,16 @@ import '../styles/Footer.css';
 function Footer() {
   return (
     <div className='footer'>
-      <div>
+      <div className='socialMedia'>
+        <a href='https://github.com/YockaFlocka'>
         <AiOutlineGithub />
+        </a>
+        <a href='https://www.linkedin.com/in/peter-yockey'>
         <AiFillLinkedin />
+        </a>
+        <a href='https://stackoverflow.com/users/18571849/peter-yockey'>
         <BsStackOverflow />
+        </a>
       </div>
       <p> &copy; 2023 peter-portfolio.com </p>
     </div>
