@@ -7,7 +7,7 @@
 
 .about {
   width: 100%;
-  height: calc(90vh - 100px);
+  height: calc(88vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,11 +22,16 @@
   font-size: 70px;
   height: 300px;
   margin-bottom: 200px;
+  color: #E8AA42;
 }
 
 .about .summary {
   width: 40%;
   font-size: 30px;
+}
+
+.summary {
+  color: #E8AA42;  
 }
 
 @media only screen and (max-width: 600px) {
