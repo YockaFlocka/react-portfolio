@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import pic from "../components/assets/profile-picture.JPG"
+import pic from "../assets/profile-picture.JPG"
 
 function About() {
   return (

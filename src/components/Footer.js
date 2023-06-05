@@ -18,7 +18,6 @@ function Footer() {
         <BsStackOverflow />
         </a>
       </div>
-      <p> &copy; 2023 peter-portfolio.com </p>
     </div>
   )
 }
