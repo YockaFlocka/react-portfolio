@@ -9,6 +9,7 @@ import Resume from "./Pages/Resume"
 function App() {
   const [ currPage, setCurrPage ] = useState("home")
   const [ prefix, setPrefix ] = useState("")
+  
 
   useEffect(() => {
     if( process.env.NODE_ENV === "production" ){
