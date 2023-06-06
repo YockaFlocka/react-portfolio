@@ -46,7 +46,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 The following screenshot shows the web application's appearance:
 
-[Screenshot](/homework/react-portfolio/src/assets/portfolio-page.JPG)
+![Screenshot](/homework/react-portfolio/src/assets/portfolio-page.JPG)
 
 The following link will bring you to the live webpage:
 
