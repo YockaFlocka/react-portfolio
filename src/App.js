@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/react-portfolio' element={<About />} />
+          <Route path='/' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
