@@ -1,9 +1,15 @@
 .resume h1 {
-  padding: 30px;  
+  padding: 30px; 
+  text-align: center; 
+}
+
+.resume p {
+  text-align: center;
 }
 
 .resume h2 {
-  padding-top: 20px;  
+  padding-top: 20px; 
+  text-align: center; 
 }
 
 .list1 {

@@ -6,7 +6,7 @@ function Resume() {
     <div className="resume">
       <h1> Resume </h1>
       <p>
-        Here is my most up-to-date <a href="https://drive.google.com/file/d/1wWtk_5FqAz62Jm9Kc8NRMwvuYXFbyYRQ/view?usp=sharing"> Resume</a>
+        Here is my current <a href="https://drive.google.com/file/d/1wWtk_5FqAz62Jm9Kc8NRMwvuYXFbyYRQ/view?usp=sharing"> Resume</a>
       </p>
       <h1> Skills </h1>
       <h2> Front-End </h2>
