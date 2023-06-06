@@ -22,7 +22,7 @@ function Header() {
 
       <div className="links">
         <Link to="/" id="name"> Peter Yockey </Link>    
-        <Link to="/" className="navs"> About Me </Link>
+        <Link to="/" className="navs"> About </Link>
         <Link to="/portfolio" className="navs"> Portfolio </Link>
         <Link to="/contact" className="navs"> Contact </Link>
         <Link to="/resume" className="navs"> Resume </Link>
