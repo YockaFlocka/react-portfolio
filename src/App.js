@@ -1,30 +1,40 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from './Pages/About';
-import Portfolio from './Pages/Portfolio';
-import Contact from './Pages/Contact';
-import Resume from './Pages/Resume';
-import Header from './components/Header';
-import Footer from './components/Footer';
-
+import { useEffect, useState } from "react"
+import Portfolio from "./Pages/Portfolio"
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Header from "./components/Header";
+import Footer from "./components/Footer"
+import Resume from "./Pages/Resume"
 
 function App() {
-    
+  const [ currPage, setCurrPage ] = useState("home")
+  const [ prefix, setPrefix ] = useState("")
+
+  useEffect(() => {
+    if( process.env.NODE_ENV === "production" ){
+      setPrefix("/react-portfolio")
+    }
+  }, [process.env.NODE_ENV])
+
+  useEffect(() => {
+    const path = window.location.href.split(window.location.host)[1]
+    console.log(path)
+    setCurrPage(path)
+  }, [window.location.href])
+
   return (
-    <div className='App'>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path='/' element={<About />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/resume' element={<Resume />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+    <div className="App">
+      <Header prefix={prefix} />
+
+      { currPage === `${prefix}/` && <About /> }
+      { currPage === `${prefix}/about` && <About /> }
+      { currPage === `${prefix}/portfolio` && <Portfolio /> }
+      { currPage === `${prefix}/contact` && <Contact /> }
+      { currPage === `${prefix}/resume` && <Resume /> }
+
+      <Footer prefix={prefix} />
     </div>
   );
-
 }
 
 export default App;
